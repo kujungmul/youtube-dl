@@ -27,7 +27,12 @@ public class mySrc {
 		for(int i = 0; i < lists.size(); i++){
 			StringTokenizer st = new StringTokenizer(lists.get(i), " ");
 			st.nextToken();
-			String add = st.nextToken();
+			String add = st.nextToken("&");
+			
+			
+			
+			
+			
 			add = add.replace("href=\"", "youtube-dl http://youtube.com");
 			add = add + " &";
 			lists2.add(add);
